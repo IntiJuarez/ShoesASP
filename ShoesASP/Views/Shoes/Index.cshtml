@@ -1,0 +1,38 @@
+﻿@model List<ShoesASP.Models.Shoe>
+
+
+<h1>Zapatillas</h1>
+
+<p>
+    <a asp-action="Create">Crear</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Marca</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var shoes in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(s => shoes.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(s => shoes.Brand.Name)
+                </td>
+                <td>
+                    <a asp-action="Delete" onclick="return confirm('¿Está seguro?')" asp-route-id="@shoes.ShoesId">Eliminar</a>
+                </td>
+                <td>
+                    <input value="@shoes.ShoesId" name="id" id="id" type="hidden"/>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
