@@ -63,3 +63,4 @@ C:\Users\intil\source\repos\ShoesASP\ShoesASP\obj\Debug\net6.0\refint\ShoesASP.d
 C:\Users\intil\source\repos\ShoesASP\ShoesASP\obj\Debug\net6.0\ShoesASP.pdb
 C:\Users\intil\source\repos\ShoesASP\ShoesASP\obj\Debug\net6.0\ShoesASP.genruntimeconfig.cache
 C:\Users\intil\source\repos\ShoesASP\ShoesASP\obj\Debug\net6.0\ref\ShoesASP.dll
+C:\Users\intil\source\repos\ShoesASP\ShoesASP\obj\Debug\net6.0\ShoesASP.sourcelink.json

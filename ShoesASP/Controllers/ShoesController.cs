@@ -113,12 +113,6 @@ namespace ShoesASP.Controllers
 
         }
 
-        private bool ShoeExists(int id)
-        {
-            return _context.Shoes.Any(s => s.ShoesId == id);
-        }
-
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -154,6 +148,12 @@ namespace ShoesASP.Controllers
             ViewData["Brands"] = new SelectList(_context.Brands,"BrandId","Name", shoe.ShoesId);
             return View(shoe);
 
+        }
+
+
+        private bool ShoeExists(int id)
+        {
+            return _context.Shoes.Any(s => s.ShoesId == id);
         }
 
 

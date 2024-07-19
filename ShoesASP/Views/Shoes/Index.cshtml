@@ -28,6 +28,7 @@
                 </td>
                 <td>
                     <a asp-action="Delete" onclick="return confirm('¿Está seguro?')" asp-route-id="@shoes.ShoesId">Eliminar</a>
+                    <a asp-action="Editar" asp-route-id="@shoes.ShoesId">Editar</a>
                 </td>
                 <td>
                     <input value="@shoes.ShoesId" name="id" id="id" type="hidden"/>
