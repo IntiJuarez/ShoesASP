@@ -7,11 +7,23 @@
     <a asp-action="Create">Crear</a>
 </p>
 
+@using(Html.BeginForm())
+{
+    <p>
+        Buscar por Nombre: @Html.TextBox("buscar")
+        <input type="submit" value="buscar"/>
+    </p>
+}
+
 <table class="table">
     <thead>
         <tr>
-            <th>Nombre</th>
-            <th>Marca</th>
+            <th>
+                @Html.ActionLink("Nombre", "Index", new { ordenar = ViewBag.OrdenarNombre })
+            </th>
+            <th>
+                @Html.ActionLink("Marca", "Index", new { ordenar = ViewBag.OrdenarMarca })
+            </th>
             <th></th>
         </tr>
     </thead>

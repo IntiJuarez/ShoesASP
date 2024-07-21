@@ -18,9 +18,39 @@ namespace ShoesASP.Controllers
         { _context = context; }
 
 
-        public async Task<IActionResult> Index()
+        /* 21/7/24
+         Agrego Filtro de búsqueda.
+         */
+        public async Task<IActionResult> Index(string ordenar, string buscar)
         {
-            var shoes = _context.Shoes.Include(s => s.Brand);
+            ViewBag.OrdenarNombre = string.IsNullOrEmpty(ordenar) ? "nombre_desc" : "";
+            ViewBag.OrdenarMarca = ordenar == "marca" ? "marca_desc" : "marca";
+            //var shoes = _context.Shoes.Include(s => s.Brand);
+            var shoes = from s in _context.Shoes.Include(s => s.Brand)
+                        select s;
+            
+            //Buscar
+            if(!string.IsNullOrEmpty(buscar))
+            {
+                shoes = shoes.Where(s => s.Name.Contains(buscar));
+            }
+
+            switch (ordenar)
+            {
+                case "nombre_desc":
+                    shoes = shoes.OrderByDescending(s => s.Name);
+                    break;
+                case "marca":
+                    shoes = shoes.OrderBy(s => s.Brand.Name);
+                    break;
+                case "marca_desc":
+                    shoes = shoes.OrderByDescending(s => s.Brand.Name);
+                    break;
+                default:
+                    shoes = shoes.OrderBy(s => s.Name);
+                    break;
+            }
+
             return View(await shoes.ToListAsync());
         }
 

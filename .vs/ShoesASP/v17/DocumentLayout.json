@@ -15,16 +15,16 @@
       "RelativeMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|solutionrelative:shoesasp\\controllers\\shoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|c:\\users\\intil\\source\\repos\\shoesasp\\shoesasp\\views\\shoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|solutionrelative:shoesasp\\views\\shoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|c:\\users\\intil\\source\\repos\\shoesasp\\shoesasp\\views\\shoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|solutionrelative:shoesasp\\views\\shoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|c:\\users\\intil\\source\\repos\\shoesasp\\shoesasp\\models\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|solutionrelative:shoesasp\\models\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|c:\\users\\intil\\source\\repos\\shoesasp\\shoesasp\\views\\shoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D4E6C28-D8FE-4BDF-9960-9EF24C72F344}|ShoesASP\\ShoesASP.csproj|solutionrelative:shoesasp\\views\\shoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Views\\Shoes\\Editar.cshtml",
-              "RelativeDocumentMoniker": "ShoesASP\\Views\\Shoes\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Views\\Shoes\\Editar.cshtml",
-              "RelativeToolTip": "ShoesASP\\Views\\Shoes\\Editar.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-19T02:49:34.407Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -57,14 +44,14 @@
               "RelativeDocumentMoniker": "ShoesASP\\Views\\Shoes\\Index.cshtml",
               "ToolTip": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Views\\Shoes\\Index.cshtml",
               "RelativeToolTip": "ShoesASP\\Views\\Shoes\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAVAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-14T19:24:22.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Shoe.cs",
               "DocumentMoniker": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Models\\Shoe.cs",
               "RelativeDocumentMoniker": "ShoesASP\\Models\\Shoe.cs",
@@ -72,12 +59,11 @@
               "RelativeToolTip": "ShoesASP\\Models\\Shoe.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T01:45:09.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T01:45:09.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Views\\Shoes\\Delete.cshtml",
               "RelativeDocumentMoniker": "ShoesASP\\Views\\Shoes\\Delete.cshtml",
@@ -85,12 +71,11 @@
               "RelativeToolTip": "ShoesASP\\Views\\Shoes\\Delete.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T01:04:23.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-16T01:04:23.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Views\\Shoes\\Create.cshtml",
               "RelativeDocumentMoniker": "ShoesASP\\Views\\Shoes\\Create.cshtml",
@@ -108,10 +93,21 @@
               "RelativeDocumentMoniker": "ShoesASP\\Controllers\\ShoesController.cs",
               "ToolTip": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Controllers\\ShoesController.cs",
               "RelativeToolTip": "ShoesASP\\Controllers\\ShoesController.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAkwF8AAAA4AAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T18:12:40.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T18:12:40.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Views\\Shoes\\Editar.cshtml",
+              "RelativeDocumentMoniker": "ShoesASP\\Views\\Shoes\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\intil\\source\\repos\\ShoesASP\\ShoesASP\\Views\\Shoes\\Editar.cshtml",
+              "RelativeToolTip": "ShoesASP\\Views\\Shoes\\Editar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-19T02:49:34.407Z"
             }
           ]
         }
