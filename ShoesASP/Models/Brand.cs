@@ -11,7 +11,7 @@ namespace ShoesASP.Models
         }
 
         public int BrandId { get; set; }
-        public string? Name { get; set; }
+        public string Name { get; set; } = null!;   
 
         public virtual ICollection<Shoe> Shoes { get; set; }
     }

@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using Microsoft.EntityFrameworkCore.Storage;
 using ShoesASP.Models;
 using ShoesASP.Models.ViewModels;
@@ -68,6 +70,20 @@ namespace ShoesASP.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                //Chequeo si la zapatilla existe
+                var existingShoe = await _context.Shoes
+                    .FirstOrDefaultAsync(s => s.Name == model.Name && s.BrandId == model.BrandId);
+
+                if (existingShoe != null)
+                {
+                    //Mensaje de error:
+                    ModelState.AddModelError(string.Empty, "Zapatilla existente");
+                    ViewData["Brands"] = new SelectList(_context.Brands, "BrandId", "Name", model.BrandId);
+                    return View(model);
+                }
+
+
                 var shoes = new Shoe()
                 {
                     Name = model.Name,
@@ -77,7 +93,6 @@ namespace ShoesASP.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
 
             ViewData["Brands"] = new SelectList(_context.Brands, "BrandId", "Name");
             return View();
