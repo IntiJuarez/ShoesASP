@@ -6,6 +6,7 @@ namespace ShoesASP.Models.ViewModels
     {
         [Required]
         [Display(Name = "Nombre")]
+        [StringLength(15, ErrorMessage = "Máximo de caracteres superados")]
         public string Name { get; set; }
 
         [Required]

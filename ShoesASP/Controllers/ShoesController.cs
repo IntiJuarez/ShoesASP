@@ -1,5 +1,4 @@
-﻿using AspNetCore;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
@@ -27,10 +26,14 @@ namespace ShoesASP.Controllers
         {
             ViewBag.OrdenarNombre = string.IsNullOrEmpty(ordenar) ? "nombre_desc" : "";
             ViewBag.OrdenarMarca = ordenar == "marca" ? "marca_desc" : "marca";
+            buscar = buscar?.Trim();
+
             //var shoes = _context.Shoes.Include(s => s.Brand);
             var shoes = from s in _context.Shoes.Include(s => s.Brand)
                         select s;
+
             
+
             //Buscar
             if(!string.IsNullOrEmpty(buscar))
             {
